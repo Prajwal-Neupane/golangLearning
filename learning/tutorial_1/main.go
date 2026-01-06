@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
 
 
 func main() {
@@ -10,10 +13,18 @@ func main() {
 	printName(printValue)
 
 	var numerator int = 101
-	var denominator int = 20
+	var denominator int = 0
 
-	var result, remainder = intDivision(numerator, denominator)
-	fmt.Println(result,remainder)
+	var result, remainder, error = intDivision(numerator, denominator)
+
+	if error != nil {
+		fmt.Printf(error.Error())
+	} else if remainder == 0 {
+		fmt.Printf("The result of the integer division is %v", result)
+	} else {
+
+		fmt.Printf("The result of the integer division is %v with remainder %v", result, remainder)
+	}
 
 }
 
@@ -22,7 +33,13 @@ func printName(printValue string) {
 
 }
 
-func intDivision(numerator int, denominator int) (int , int) {
+func intDivision(numerator int, denominator int) (int , int, error) {
+	var err error
+
+	if denominator == 0{
+		err = errors.New("Cannot divide by 0")
+		return 0 , 0 , err
+	}
 	result := numerator/denominator
 	remainder := numerator % denominator
 
@@ -30,5 +47,5 @@ func intDivision(numerator int, denominator int) (int , int) {
 	// var remainder int = numerator % denominator
 	// var result int = numerator / denominator
 
-	return result, remainder
+	return result, remainder, err
 }
