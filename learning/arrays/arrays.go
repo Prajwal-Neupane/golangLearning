@@ -1,8 +1,8 @@
-package main
+package arrays
 
 import "fmt"
 
-func main() {
+func Slice() {
 
 
 	var intArr [5] int64
