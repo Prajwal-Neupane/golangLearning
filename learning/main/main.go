@@ -1,6 +1,9 @@
 package main
 
-import "intro/learning/variables"
+import (
+	datatypes "intro/learning/dataTypes"
+	// "intro/learning/variables"
+)
 
 // "golang/learning/tutorial_2"
 // "intro/learning/arrays"
@@ -27,9 +30,40 @@ func main() {
 	// 	fmt.Printf("The result of the integer division is %v with remainder %v", result, remainder)
 	// }
 
-	variables.Variables()
+
+
+
+
+
+
+
+
+
+	// variables.Variables()
+	datatypes.DataTypes()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
+
 
 // func printName(printValue string) {
 // 	fmt.Println(printValue)
