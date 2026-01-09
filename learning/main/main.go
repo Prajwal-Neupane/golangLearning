@@ -1,9 +1,9 @@
 package main
 
-import (
-	datatypes "intro/learning/dataTypes"
-	// "intro/learning/variables"
-)
+import "intro/learning/strings"
+
+// "intro/learning/dataTypes"
+// "intro/learning/variables"
 
 // "golang/learning/tutorial_2"
 // "intro/learning/arrays"
@@ -40,7 +40,8 @@ func main() {
 
 
 	// variables.Variables()
-	datatypes.DataTypes()
+	// datatypes.DataTypes()
+	strings.Strings()
 
 
 
