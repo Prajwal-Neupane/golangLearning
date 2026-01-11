@@ -1,6 +1,9 @@
 package main
 
-import "intro/learning/strings"
+import (
+	"intro/learning/loops"
+	// "intro/learning/strings"
+)
 
 // "intro/learning/dataTypes"
 // "intro/learning/variables"
@@ -41,7 +44,8 @@ func main() {
 
 	// variables.Variables()
 	// datatypes.DataTypes()
-	strings.Strings()
+	// strings.Strings()
+	loops.Loops()
 
 
 
