@@ -1,32 +1,53 @@
-package arrays
+package main
 
 import "fmt"
 
-func Slice() {
+func main() {
 
 
-	var intArr [5] int64
+	// var intArr [5] int64
 
 	// var newArray [3] int32 = [3]int32{1, 2, 3} OR
 
-	newArray := [3]int32{1, 2, 3}
+	// newArray := [3]int32{1, 2, 3}
 
-	fmt.Println(&newArray[0])
+	// fmt.Println(newArray[0])
 
-	// fmt.Printf(intArr[1])
-	fmt.Print(intArr)
+	// for i:= range(newArray) {
+	// 	fmt.Println(newArray[i])
+	// }
 
-	// fmt.Println("Hello")
+	// 2D arrays
 
 
-	// Slice
+	nums := [2][3]int64{{1, 2}, {3, 4}}
 
-	var intSlice []int32 = []int32{1, 2, 3}
+	for i:= range(nums) {
+		for j:= range(nums){
+			fmt.Println(nums[i][j])
+		}
+	}
+	// for i := 0; i < len(nums); i++ {
+	// 	for j := 0; j < len(nums); j++ {
+	// 		fmt.Println(nums[i][j])
+	// 	}
+		
+	// }
 
-	fmt.Println(intSlice)
+	// // fmt.Printf(intArr[1])
+	// fmt.Print(intArr)
 
-	intSlice = append(intSlice, 5)
-	fmt.Println(intSlice)
+	// // fmt.Println("Hello")
+
+
+	// // Slice
+
+	// var intSlice []int32 = []int32{1, 2, 3}
+
+	// fmt.Println(intSlice)
+
+	// intSlice = append(intSlice, 5)
+	// fmt.Println(intSlice)
 
 
 }

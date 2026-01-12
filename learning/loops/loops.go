@@ -13,10 +13,18 @@ func Loops() {
 		
 	}
 
-	fmt.Printf("%v", sum);
+	fmt.Println(sum);
 
 
 	// for i := 0; i < count; i++ {  this can be replaced with range
 		
 	// }
+
+	// While style loop
+
+	i := 1;
+	for i <= 10 {
+		fmt.Println(i)
+		i+=1;
+	}
 }
