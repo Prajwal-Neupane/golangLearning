@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func printSlice [T any](items [] T) {
+func printSlice [T int | string](items [] T) {
 	for _, item :=range items {
 		fmt.Println(item)
 	}
